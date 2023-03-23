@@ -2,8 +2,7 @@ const { verify } = require("jsonwebtoken");
 const { authLogin, createUser } = require("../models/LoginModel");
 const { createToken, verifyPassword, createHash } = require("../utils/util");
 const { validationResult } = require("express-validator");
-const Workout = require("../models/userModel");
-const mongoose = require("mongoose");
+
 const loginUser = async (req, res) => {
 	const email = req.body.email;
 	const password = req.body.password;
