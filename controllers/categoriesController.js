@@ -1,7 +1,7 @@
-const db = require("../models");
+// const db = require("../models");
 
 // const Categories = db.categories;
-const Categories = require("../models/categoriesMongoModel");
+const Categories = require("./../models/CategoriesMongoModel");
 const mongoose = require("mongoose");
 
 const getCategories = async (req, res) => {

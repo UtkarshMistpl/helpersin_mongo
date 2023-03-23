@@ -1,10 +1,10 @@
-const db = require("../models");
-const { getDistance } = require("../services/workers");
+// const db = require("../models");
+const { getDistance } = require("./../services/workers");
 
 // const Workers = db.workers;
-const Workers = require("../models/workersMongoModel");
+const Workers = require("./../models/workersMongoModel");
 const mongoose = require("mongoose");
-const { titleCase } = require("../utils/util");
+const { titleCase } = require("./../utils/util");
 
 const getWorkers = async (req, res) => {
 	const category = titleCase(req.body.category);

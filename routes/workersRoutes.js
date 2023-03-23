@@ -10,7 +10,7 @@ const {
 	saveWorker,
 	editWorker,
 } = require("../controllers/workersController");
-const { upload } = require("../utils/util");
+const { upload } = require("./../utils/util");
 
 router.post("/", getWorkers);
 router.post("/one", getOneWorker);

@@ -1,9 +1,9 @@
 const { hash } = require("bcrypt");
-const db = require("../models");
+const db = require("./../models");
 const { createToken, verifyPassword, createHash } = require("../utils/util");
 const { validationResult } = require("express-validator");
 
-const User = require("../models/userMongoModel");
+const User = require("./../models/userMongoModel");
 const mongoose = require("mongoose");
 const Countries = db.countries;
 const Users = db.users;
